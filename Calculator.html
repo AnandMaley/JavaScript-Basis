@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <div>
+        <input type="text" class="display" autofocus>
+        <div class="container">
+            <button onclick="store('1')">1</button>
+            <button onclick="store('2')">2</button>
+            <button onclick="store('3')">3</button>
+            <button class="operator" onclick="store('+')">+</button>
+
+            <button onclick="store('4')">4</button>
+            <button onclick="store('5')">5</button>
+            <button onclick="store('6')">6</button>
+            <button class="operator" onclick="store('-')">-</button>
+
+            <button onclick="store('7')">7</button>
+            <button onclick="store('8')">8</button>
+            <button onclick="store('9')">9</button>
+            <button class="operator" onclick="store('*')">*</button>
+
+            <button class="double-width" onclick="Clear()">C</button>
+            <button onclick="store('0')">0</button>
+            <button class="operator" onclick="store('/')">/</button>
+            <button class="operator double-width" onclick="answer()">=</button>
+            <button onclick="store('.')">.</button>
+            <button onclick="BackSpace()">⌫</button>
+        </div>
+    </div>
+    <script src="Calculator.js"></script>
+</body>
+</html>
